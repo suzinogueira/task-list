@@ -26,3 +26,75 @@ ul {
 .card {
   box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.2);
 }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addButton {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  background-color: rgb(60, 81, 82);
+  color: white;
+  border-radius: 25px;
+}
+
+.modal {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardModal {
+  padding: 20px;
+  background-color: white;
+}
+
+.hide {
+  display: none;
+}
+
+.task {
+  color: rgb(60, 81, 82);
+}
+
+.input {
+  width: 300px;
+  margin: 10px 0px;
+  border: 2px solid rgb(60, 81, 82);
+  font-size: 16px;
+}
+
+.buttonAddTask {
+  margin: 1px;
+  padding: 3px 10px;
+  border: none;
+  background: rgb(60, 81, 82);
+  color: #eee;
+  font-size: 20px;
+  outline: none;
+  border-radius: 2px;
+}
+
+.addButton,
+.buttonAddTask,
+.buttonDelete,
+.buttonDoneUndone {
+  cursor: pointer;
+}
+
+.buttonDelete,
+.buttonDoneUndone {
+  border: none;
+  background-color: transparent;
+}

@@ -16,13 +16,17 @@ function ListItem(props) {
         {props.item.text}
         <div>
           <button
+            className="buttonDoneUndone"
             onClick={() => {
               props.onDone(props.item)
             }}
           >
             <DoneImg done={props.item.done}></DoneImg>
           </button>
-          <button onClick={() => props.onItemDeleted(props.item)}>
+          <button
+            className="buttonDelete"
+            onClick={() => props.onItemDeleted(props.item)}
+          >
             <img src="./assets/bin.png" alt="delete"></img>
           </button>
         </div>
